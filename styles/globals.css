@@ -11,7 +11,7 @@
 .app {
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 0px 60px;
 }
@@ -24,12 +24,22 @@
 
 .card {
   @apply w-fit justify-center items-center flex flex-col p-14 gap-8 card_border text-white;
-  /* position: fixed; */
-  /* left: 20px;
+  position: relative;
+  left: 20px;
   top: 50%;
-  transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 .card_border {
   @apply border rounded-[30px] border-zinc-500;
+}
+
+/* Home Component */
+
+.home {
+  @apply flex flex-col gap-[30px] m-[100px];
+}
+
+.light-border {
+  @apply card_border w-fit px-[20px] py-[10px];
 }
