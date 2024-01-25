@@ -1,21 +1,17 @@
-import Image from "next/image";
+import Welcome from "@/components/Welcome";
+import About from "@/components/About";
+import Card from "@/components/Card";
+import Nav from "@/components/Nav";
 
 export default function Home() {
   return (
-    <main className="home">
-      <div className="flex gap-[10px] item-center light-border">
-        <Image src="/icons/home.svg" width={16} height={16} />
-        <p className="text-[12px]">INTRODUCE</p>
+    <main className="app">
+      <Card />
+      <div className="container">
+        <Welcome />
+        <About />
       </div>
-      <p className="text-[78px] leading-[90px]">
-        Say Hi from <span className="text-red-600">Hugo</span>, <br />
-        Web Developer
-      </p>
-      <p className="text-zinc-500">
-        I code beautifully simple things and i love what i do.
-        <br />
-        Just simple like that!
-      </p>
+      <Nav />
     </main>
   );
 }
