@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Welcome = () => {
   return (
-    <section>
+    <section id="welcome">
       <div className="flex gap-[10px] item-center light-border">
         <Image src="/icons/home.svg" width={16} height={16} />
         <p className="text-[12px]">INTRODUCE</p>
@@ -15,7 +15,7 @@ const Welcome = () => {
       <p className="text-zinc-500">
         I code beautifully simple things and i love what i do.
         <br />
-        Just simple like that!
+      Just simple like that!
       </p>
     </section>
   );
