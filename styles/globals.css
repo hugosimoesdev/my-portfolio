@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   font-family: "Inter", sans-serif;
-  background-color: #1f1f1f;
-  color: #fff;
 }
 
 .app {
@@ -16,21 +16,11 @@
   justify-content: space-between;
   margin: 0px 60px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Card Component */
 
-.logo {
-  @apply font-bold text-5xl text-white;
-}
-
-.card {
-  @apply w-fit justify-center items-center flex flex-col p-14 gap-8 card_border text-white;
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .card_border {
   @apply border rounded-[30px] border-zinc-500;
@@ -52,10 +42,6 @@
 
 .menu {
   @apply w-fit justify-center items-center flex flex-col p-5 gap-8 card_border text-white;
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .active {
