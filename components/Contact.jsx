@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-const About = () => {
+const Contact = () => {
   return (
-    <section id="about">
+    <section id="contact">
       <div className="flex gap-[10px] item-center light-border">
         <Image src="/icons/home.svg" width={16} height={16} />
-        <p className="text-[12px]">ABOUT</p>
+        <p className="text-[12px]">CONTACT</p>
       </div>
-      <p className="text-[78px] leading-[90px]">ABOUT</p>
+      <p className="text-[78px] leading-[90px]">CONTACT</p>
       <p className="text-zinc-500">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
         <br />
@@ -64,4 +64,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
