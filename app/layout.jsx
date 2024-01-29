@@ -1,5 +1,4 @@
 import SideBar from "@/components/SideBar";
-import Footer from "@/components/Footer";
 
 import "/styles/globals.css";
 
@@ -13,9 +12,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-zinc-800 text-zinc-300 h-screen flex">
         <SideBar />
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-1 mt-16 mx-80  items-start">
           {children}
-          <Footer />
         </div>
       </body>
     </html>

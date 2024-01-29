@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { navLinks, socialLinks } from "@/constants";
-import Footer from "./Footer";
 
 const SideBar = () => {
   const pathname = usePathname();
