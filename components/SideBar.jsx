@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { navLinks, socialLinks } from "@/constants";
+import Footer from "./Footer";
 
 const SideBar = () => {
   const pathname = usePathname();
@@ -41,7 +42,10 @@ const SideBar = () => {
           ))}
         </nav>
       </div>
-      <div className="flex items-center justify-between mb-5 mx-10">
+      <div className="flex items-center justify-center mb-5 text-sm text-zinc-400">
+        Copyright © 2024 Hugo Simões
+      </div>
+      <div className="flex flex-colitems-center justify-between mb-5 mx-10">
         {socialLinks.map((link) => (
           <Link
             href={link.href}
