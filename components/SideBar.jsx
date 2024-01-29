@@ -11,16 +11,16 @@ const SideBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col w-64 border-r">
-      <div className="flex-col flex-1">
-        <div className="flex flex-col items-center gap-5 p-4 mx-2">
+    <aside className="flex flex-col w-80 border-r">
+      <div className="flex-col flex-1 mt-12 mx-6">
+        <div className="flex flex-col items-center gap-5 p-4">
           <div className="flex items-center justify-between w-full">
             <p className="font-bold text-3xl">Hugo</p>
             <p className="text-sm text-end">Web Developer</p>
           </div>
           <Image
             src="/hugo.jpg"
-            width={200}
+            width={250}
             height={50}
             className="rounded-3xl"
           />
@@ -41,7 +41,7 @@ const SideBar = () => {
           ))}
         </nav>
       </div>
-      <div className="flex items-center justify-between mb-5 mx-7">
+      <div className="flex items-center justify-between mb-5 mx-10">
         {socialLinks.map((link) => (
           <Link
             href={link.href}
