@@ -1,6 +1,7 @@
 import React from "react";
 import { Briefcase } from "lucide-react";
 import TimeLineItem from "@/components/TimeLineItem";
+import ButtonDownload from "@/components/ButtonDownload";
 
 const Resume = () => {
   return (
@@ -15,6 +16,7 @@ const Resume = () => {
         various platforms since 2020. My passion for technology keeps me
         consistently abreast of the latest market trends.
       </p>
+
       <p className="text-3xl">
         Education & <span className="text-red-600">Experience</span>
       </p>
@@ -42,6 +44,7 @@ const Resume = () => {
           />
         </ol>
       </div>
+      <ButtonDownload />
     </div>
   );
 };

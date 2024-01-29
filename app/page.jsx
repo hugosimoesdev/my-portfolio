@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import { Home as HomeIcon } from "lucide-react";
 
 export default function Home() {
@@ -13,11 +14,15 @@ export default function Home() {
         Web Developer
       </p>
       <p className="text-zinc-400 text-j">
-        Hello and welcome to my website. <br/><br/>Here, you'll discover everything about
-        my professional journey. Feel free to get to know me better. <br/><br/>I'm a
-        junior web developer with a degree in computer science, actively seeking
-        job opportunities. <br/><br/>I code beautifully simple things and i love what i
-        do. Just simple like that! <br/>
+        Hello and welcome to my website. <br />
+        <br />
+        Here, you'll discover everything about my professional journey. Feel
+        free to get to know me better. <br />
+        <br />
+        I'm a junior web developer with a degree in computer science, actively
+        seeking job opportunities. <br />
+        <br />I code beautifully simple things and i love what i do. Just simple
+        like that! <br />
         Thanks, see you soon.
       </p>
     </div>
