@@ -1,6 +1,7 @@
-import SideBar from "@/components/SideBar";
-
 import "/styles/globals.css";
+
+import SideBar from "@/components/SideBar";
+import Menu from "@/components/Menu";
 
 export const metadata = {
   title: "Hugo Simões",
@@ -10,11 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-zinc-800 text-zinc-300 h-screen flex">
+      <body className="bg-zinc-800 text-zinc-300 h-screen lg:flex">
         <SideBar />
-        <div className="flex flex-col flex-1 mt-16 mx-80  items-start">
-          {children}
-        </div>
+        <Menu />
+        {children}
       </body>
     </html>
   );
