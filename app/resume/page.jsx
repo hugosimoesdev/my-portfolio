@@ -5,17 +5,16 @@ import ButtonDownload from "@/components/ButtonDownload";
 
 const Resume = () => {
   return (
-    <main className="flex flex-col items-center gap-8 mt-20 lg:mx-2 w-[75%]">
+    <main className="container">
       <div className="flex w-fit gap-3 items-center border rounded-3xl py-2 px-4">
         <Briefcase size={16} />
         <p className="text-xs uppercase">Resume</p>
       </div>
-
       <p className="text-3xl max-lg:text-xl mx-16">
         Education & <span className="text-red-600">Experience</span>
       </p>
-      <div className="flex flex-col justify-start items-center mx-20">
-        <ol className="relative border-s border-gray-200 dark:border-gray-700">
+      <div className="flex flex-col justify-start items-center mx-12">
+        <ol className="relative z-0 border-s border-gray-200 dark:border-gray-700">
           <TimeLineItem
             title="Founder & Full Stack Developer"
             date="Jul 2023 to Present"
