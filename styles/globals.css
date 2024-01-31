@@ -9,5 +9,5 @@
 }
 
 .container {
-  @apply flex flex-col items-center gap-8 mt-20 w-[75%] ml-[350px] max-lg:w-full max-lg:mx-0 max-lg:mt-10;
+@apply flex flex-col items-center gap-8 mt-20 w-[75%] ml-[350px] max-lg:w-fit max-lg:mx-10 max-lg:mt-10;
 }

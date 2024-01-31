@@ -10,10 +10,10 @@ const Resume = () => {
         <Briefcase size={16} />
         <p className="text-xs uppercase">Resume</p>
       </div>
-      <p className="text-3xl max-lg:text-xl mx-16">
+      <p className="text-3xl max-lg:text-xl">
         Education & <span className="text-red-600">Experience</span>
       </p>
-      <div className="flex flex-col justify-start items-center mx-12">
+      <div className="flex flex-col items-center">
         <ol className="relative z-0 border-s border-gray-200 dark:border-gray-700">
           <TimeLineItem
             title="Founder & Full Stack Developer"

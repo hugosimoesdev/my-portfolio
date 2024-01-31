@@ -7,7 +7,7 @@ export default function Home() {
         <HomeIcon size={16} />
         <p className="text-xs uppercase">introduce</p>
       </div>
-      <div className="flex flex-col gap-4 mx-12">
+      <div className="flex flex-col gap-4 mx-12 pr-12 max-lg:pr-0 max-lg:mx-0">
         <p className="text-7xl leading-tight max-lg:text-3xl">
           Say Hi from <span className="text-red-600">Hugo</span>, <br />
           Web Developer

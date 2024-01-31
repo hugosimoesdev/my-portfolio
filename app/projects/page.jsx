@@ -1,116 +1,52 @@
 import React from "react";
+import { GanttChartSquare } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
   return (
-    <main className="flex flex-col items-center ml-[300px] max-lg:mx-20 max-lg:w-full max-lg:items-center w-full">
-      <div className="flex gap-[10px] item-center light-border">
-        <Image src="/icons/home.svg" width={16} height={16} />
-        <p className="text-[12px]">PROJECT</p>
+    <main className="container">
+      <div className="flex w-fit gap-3 border rounded-3xl py-2 px-4">
+        <GanttChartSquare size={16} />
+        <p className="text-xs uppercase">Projects</p>
       </div>
-      <p className="text-[78px] leading-[90px]">PROJECT</p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
-      <p className="text-zinc-500">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus
-        <br />
-        tellus nisl, a ornare libero aliquet sed. Sed fringilla luctus est, non
-        <br />
-        venenatis mi. Ut tristique molestie mollis. In eget risus eu massa
-        <br />
-        maximus malesuada quis id odio. Vestibulum sed lorem quis metus pulvinar
-        <br />
-        molestie eu non odio. Proin ante augue, ullamcorper ac est a, egestas
-        <br />
-        iaculis orci. Ut posuere nisl non odio elementum, eget aliquam diam
-        <br />
-        tristique. Mauris id enim magna. In consequat ipsum augue, eget
-        <br />
-        tincidunt mauris gravida ut.
-      </p>
+      <div className="flex flex-col mt-8">
+        <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
+          <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
+          <Link href="/resume" className="flex-1 h-[100px] p-3">
+            <p className="text-lg">Demo Project 1</p>
+            <p className="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              sit amet elementum sem, eu consectetur velit. Quisque ac ultricies
+              erat.
+            </p>
+          </Link>
+        </div>
+        <span className="mt-3 w-[800px] border border-zinc-400 opacity-30 " />
+        <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
+          <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
+          <Link href="/resume" className="flex-1 h-[100px] p-3">
+            <p className="text-lg">Demo Project 2</p>
+            <p className="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              sit amet elementum sem, eu consectetur velit. Quisque ac ultricies
+              erat.
+            </p>
+          </Link>
+        </div>
+        <span className="mt-3 w-[800px] border border-zinc-400 opacity-30 " />
+        <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
+          <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
+          <Link href="/resume" className="flex-1 h-[100px] p-3">
+            <p className="text-lg">Demo Project 3</p>
+            <p className="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              sit amet elementum sem, eu consectetur velit. Quisque ac ultricies
+              erat.
+            </p>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 };
