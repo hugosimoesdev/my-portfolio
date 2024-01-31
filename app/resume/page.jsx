@@ -5,22 +5,16 @@ import ButtonDownload from "@/components/ButtonDownload";
 
 const Resume = () => {
   return (
-    <div className="flex flex-col w-full items-center gap-8 mt-20 lg:mx-2">
+    <main className="flex flex-col items-center gap-8 mt-20 lg:mx-2 w-[75%]">
       <div className="flex w-fit gap-3 items-center border rounded-3xl py-2 px-4">
         <Briefcase size={16} />
-        <p className="text-[12px]">RESUME</p>
+        <p className="text-xs uppercase">Resume</p>
       </div>
-      <p className="text-zinc-400 text-justify mx-16 max-lg:text-sm">
-        A Computer Science graduate committed to excellence, I have been
-        actively involved in crafting innovative digital solutions across
-        various platforms since 2020. My passion for technology keeps me
-        consistently abreast of the latest market trends.
-      </p>
 
       <p className="text-3xl max-lg:text-xl mx-16">
         Education & <span className="text-red-600">Experience</span>
       </p>
-      <div className="flex flex-col justify-start mx-16">
+      <div className="flex flex-col justify-start items-center mx-20">
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           <TimeLineItem
             title="Founder & Full Stack Developer"
@@ -45,7 +39,7 @@ const Resume = () => {
         </ol>
       </div>
       <ButtonDownload />
-    </div>
+    </main>
   );
 };
 
