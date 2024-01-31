@@ -2,7 +2,7 @@ import { Home as HomeIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full items-center gap-8 mt-20">
+    <main className="flex flex-col items-center gap-8 mt-20">
       <div className="flex w-fit gap-3 border rounded-3xl py-2 px-4">
         <HomeIcon size={16} />
         <p className="text-xs uppercase">introduce</p>
