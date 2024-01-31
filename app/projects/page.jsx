@@ -11,7 +11,7 @@ const Projects = () => {
         <p className="text-xs uppercase">Projects</p>
       </div>
       <div className="flex flex-col mt-8">
-        <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
+        <div className="container-project">
           <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
           <Link href="/resume" className="flex-1 h-[100px] p-3">
             <p className="text-lg">Demo Project 1</p>
@@ -22,7 +22,7 @@ const Projects = () => {
             </p>
           </Link>
         </div>
-        <span className="mt-3 w-[800px] border border-zinc-400 opacity-30 " />
+        <span className="divider " />
         <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
           <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
           <Link href="/resume" className="flex-1 h-[100px] p-3">
@@ -34,7 +34,7 @@ const Projects = () => {
             </p>
           </Link>
         </div>
-        <span className="mt-3 w-[800px] border border-zinc-400 opacity-30 " />
+        <span className="divider" />
         <div className="w-[800px] p-3 flex item-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700">
           <Image src="/no-image.jpg" width={130} height={100} alt="No image" />
           <Link href="/resume" className="flex-1 h-[100px] p-3">
@@ -46,6 +46,7 @@ const Projects = () => {
             </p>
           </Link>
         </div>
+        <span className="divider" />
       </div>
     </main>
   );

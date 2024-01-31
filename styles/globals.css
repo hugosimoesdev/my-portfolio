@@ -11,3 +11,11 @@
 .container {
 @apply flex flex-col items-center gap-8 mt-20 w-[75%] ml-[350px] max-lg:w-fit max-lg:mx-10 max-lg:mt-10;
 }
+
+.container-project {
+  @apply w-[800px] p-3 flex items-center justify-center hover:scale-105 hover:duration-300 hover:bg-zinc-700 max-lg:w-[600px];
+}
+
+.divider {
+  @apply mt-3 w-[800px] border border-zinc-400 opacity-30;
+}
