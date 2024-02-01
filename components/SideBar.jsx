@@ -12,7 +12,7 @@ const SideBar = () => {
 
   return (
     <aside className="flex flex-col px-10 border-r h-full max-lg:hidden fixed">
-      <div className="flex-col flex-1 mt-12">
+      <div className="flex-col flex-1 mt-10">
         <div className="flex flex-col items-center gap-5">
           <div className="flex items-center gap-4 justify-between w-full">
             <p className="font-bold text-3xl">Hugo</p>
@@ -20,12 +20,12 @@ const SideBar = () => {
           </div>
           <Image
             src="/hugo.jpg"
-            width={250}
+            width={200}
             height={50}
             className="rounded-3xl"
           />
         </div>
-        <nav className="flex flex-col items-start mx-4 gap-2 text-sm">
+        <nav className="flex flex-col items-start gap-2 text-sm mt-4">
           {navLinks.map((link) => (
             <Link
               href={link.href}
