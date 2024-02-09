@@ -8,11 +8,11 @@ export default function Home() {
         <p className="text-xs uppercase">introduce</p>
       </div>
       <div className="flex flex-col gap-4 mx-12 pr-12 max-lg:pr-0 max-lg:mx-0">
-        <p className="text-7xl leading-tight max-lg:text-3xl">
+        <p className="title">
           Say Hi from <span className="text-red-600">Hugo</span>, <br />
           Web Developer
         </p>
-        <p className="text-zinc-400 text-j">
+        <p className="text-zinc-400 md:text-lg">
           Hello and welcome to my website. <br />
           <br />
           Here, you'll discover everything about my professional journey. Feel

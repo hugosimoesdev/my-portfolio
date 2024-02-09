@@ -7,7 +7,7 @@ import Image from "next/image";
 const Dropdown = () => {
   const pathname = usePathname();
   return (
-    <div className="fixed z-50 flex flex-col bg-zinc-900  h-screen">
+    <div className="fixed z-50 flex flex-col bg-zinc-900 h-screen">
       <div className="flex-col flex-1 mx-6">
         <div className="flex flex-col items-center gap-5 p-4">
           <div className="flex items-center justify-between w-full">

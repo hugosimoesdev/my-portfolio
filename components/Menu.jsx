@@ -11,8 +11,8 @@ const Menu = () => {
   };
   return (
     <div className="lg:hidden">
-      <button onClick={toggleDropdown} className="">
-        <MenuIcon />
+      <button onClick={toggleDropdown} className="mt-5 ml-5">
+        <MenuIcon size={34} />
       </button>
       {isDropdown && <Dropdown />}
     </div>

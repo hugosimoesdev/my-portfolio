@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-zinc-800 text-zinc-300 h-screen lg:flex">
+      <body className="bg-zinc-800 text-zinc-300">
         <SideBar />
         <Menu />
         {children}
