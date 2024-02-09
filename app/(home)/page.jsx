@@ -5,9 +5,9 @@ export default function Home() {
     <main className="container">
       <div className="flex w-fit gap-3 border rounded-3xl py-2 px-4">
         <HomeIcon size={16} />
-        <p className="text-xs uppercase">introduce</p>
+        <p className="text-xs uppercase">Home</p>
       </div>
-      <div className="flex flex-col gap-4 mx-12 pr-12 max-lg:pr-0 max-lg:mx-0">
+      <div className="flex flex-col gap-4 max-lg:pr-0 max-lg:mx-0">
         <p className="title">
           Say Hi from <span className="text-red-600">Hugo</span>, <br />
           Web Developer

@@ -11,7 +11,7 @@ const SideBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col px-10 border-r h-full max-lg:hidden fixed w-72 ">
+    <aside className="flex flex-col px-10 pt-10 border-r h-screen max-lg:hidden fixed w-72 ">
       <div className="flex-col flex-1">
         <div className="flex flex-col items-center gap-5">
           <div className="flex items-center gap-4 justify-between w-full">
