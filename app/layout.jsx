@@ -1,6 +1,6 @@
 import "/styles/globals.css";
 
-import SideBar from "@/components/SideBar";
+import SideBar from "@/components/Sidebar";
 import Menu from "@/components/Menu";
 
 export const metadata = {

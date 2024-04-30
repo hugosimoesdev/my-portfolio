@@ -7,32 +7,32 @@ import { usePathname } from "next/navigation";
 
 import { navLinks, socialLinks } from "@/constants";
 
-const SideBar = () => {
+const Sidebar = () => {
   const pathname = usePathname();
 
   return (
     <aside className="flex flex-col px-10 pt-10 border-r h-screen max-lg:hidden fixed w-72 ">
       <div className="flex-col flex-1">
         <div className="flex flex-col items-center gap-5">
-          <div className="flex items-center gap-4 justify-between w-full">
-            <p className="font-bold text-3xl">Hugo</p>
-            <p className="text-sm text-end">Web Developer</p>
+          <div className="flex justify-evenly w-full items-center">
+            <span className="font-bold text-3xl">Hugo</span>
+            <span className="text-sm text-end">Web Developer</span>
           </div>
           <Image
             src="/hugo.jpg"
             width={200}
             height={50}
             className="rounded-3xl"
+            alt="Hugo's photo"
           />
         </div>
         <nav className="flex flex-col items-start gap-2 text-sm mt-4">
           {navLinks.map((link) => (
             <Link
               href={link.href}
-              className={
-                `flex gap-4 items-center p-2 hover:bg-zinc-600 w-full ` +
-                `link ${pathname === link.href ? "bg-zinc-600" : ""}`
-              }
+              className={`flex gap-4 items-center p-2 hover:bg-zinc-600 rounded-md w-full ${
+                pathname === link.href ? "bg-zinc-600" : ""
+              }`}
               key={link.id}
             >
               {link.icon}
@@ -59,4 +59,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
